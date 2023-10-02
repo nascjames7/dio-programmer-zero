@@ -26,41 +26,41 @@ Ao final deve se exibir uma mensagem:
 //-----------------------Código do Programa--------------------------------//
 
 //Declaração da variáveis e solicitação da quantidade de experiência do héroi..
-let expertise = parseInt("Digite a quantidade de experiência do nosso héroi: Math.random[0, 20000]");
-let nameHero = "jim"//prompt("Digite o nome do nosso héroi: ")
+let expertise = parseInt(prompt("Digite a quantidade de experiência do nosso héroi: "))
+let nameHero = prompt("Digite o nome do nosso héroi: ")
 
 //Implementação da estrututa condicional.
 if(expertise <= 1000){
     //Impressão da resposta para este caso específico.
-    alert("O Herói de nome " + nameHero + "está no nível de ferro.")
+    alert("O Herói de nome " + nameHero + " está no nível de ferro.")
 }
 if(expertise > 1000 && expertise <= 2000){
     //Impressão da resposta para este caso específico.
-    alert("O Herói de nome " + nameHero + "está no nível de bronze.")
+    alert("O Herói de nome " + nameHero + " está no nível de bronze.")
 }
 if(expertise > 2000 && expertise <= 5000){
     //Impressão da resposta para este caso específico.
-    alert("O Herói de nome " + nameHero + "está no nível de prata.")
+    alert("O Herói de nome " + nameHero + " está no nível de prata.")
 }
 if(expertise > 5000 && expertise <= 7000){
     //Impressão da resposta para este caso específico.
-    alert("O Herói de nome " + nameHero + "está no nível de ouro.")
+    alert("O Herói de nome " + nameHero + " está no nível de ouro.")
 }
 if(expertise > 7000 && expertise <= 8000){
     //Impressão da resposta para este caso específico.
-    alert("O Herói de nome " + nameHero + "está no nível de platina.")
+    alert("O Herói de nome " + nameHero + " está no nível de platina.")
 }
 if(expertise > 8000 && expertise <= 9000){
     //Impressão da resposta para este caso específico.
-    alert("O Herói de nome " + nameHero + "está no nível de ascendente.")
+    alert("O Herói de nome " + nameHero + " está no nível de ascendente.")
 }
 if(expertise > 9000 && expertise <= 10000){
     //Impressão da resposta para este caso específico.
-    alert("O Herói de nome " + nameHero + "está no nível de imortal.")
+    alert("O Herói de nome " + nameHero + " está no nível de imortal.")
 }
 if(expertise > 10000){
     //Impressão da resposta para este caso específico.
-    alert("O Herói de nome " + nameHero + "está no nível de radiante.")
+    alert("O Herói de nome " + nameHero + " está no nível de radiante.")
 }
 
 
