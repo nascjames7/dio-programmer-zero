@@ -27,7 +27,14 @@ Ao final deve se exibir uma mensagem:
 
 //Declaração da variáveis e solicitação da quantidade de experiência do héroi..
 let expertise = parseInt(prompt("Digite a quantidade de experiência do nosso héroi: "))
-let nameHero = prompt("Digite o nome do nosso héroi: ")
+
+//Implementação do laço para verificar se o dado de entrada são válido.
+while(expertise <= 0){
+    alert('Esse dado de entrada não é válido. Digite um valor maior que zero!')
+    expertise = parseInt(prompt("Digite a quantidade de experiência do nosso héroi: "))
+}
+
+let nameHero = prompt("Digite o nome do nosso héroi: ") 
 
 //Implementação da estrututa condicional.
 if(expertise <= 1000){

@@ -46,9 +46,21 @@
 
             //Declaração da variáveis e solicitação da quantidade de experiência do héroi..
             let numeroDeVitorias = parseInt(prompt("Digite a quantidade de vitórias do nosso herói: "))
-            let numeroDeDerrotas = parseInt(prompt("Digite a quantidade de derrotas do nosso herói: "))
-            let saldoDePartidasRankeadas = (numeroDeVitorias - numeroDeDerrotas)
 
+            //Implementação dos laços para verificar se os dados de entrada são válidos.
+            while(numeroDeVitorias <= 0){
+                alert('Esse dado de entrada não é válido. Digite um valor maior que zero!')
+                numeroDeVitorias = parseInt(prompt("Digite a quantidade de vitórias do nosso héroi: "))
+            }
+            
+            let numeroDeDerrotas = parseInt(prompt("Digite a quantidade de derrotas do nosso herói: "))
+            while(numeroDeDerrotas <= 0){
+                alert('Esse dado de entrada não é válido. Digite um valor maior que zero!')
+                numeroDeDerrotas = parseInt(prompt("Digite a quantidade de derrotas do nosso héroi: "))
+            }
+            let saldoDePartidasRankeadas = (numeroDeVitorias - numeroDeDerrotas) 
+
+            
             //Implementação da estrututa condicional.
             if(saldoDePartidasRankeadas <= 10){
                 //Impressão da resposta para este caso específico.
