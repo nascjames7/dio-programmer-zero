@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio de Projeto</title>
+    <style>
+        body {
+            background-color: rgb(199, 109, 131);
+            color: white;
+            font: normal 20pt Arial;
+        }
+       
+    </style>
+</head>
+<body>
+    <h1>Criação de Classe e Objetos em um Jogo!</h1>    
+    <script>
+        ///Desafio Criando Classe e Objetos em um Jogo
+
+        //@uthor: James Anderson
+        //Data: 02 de outubro de 2023
+
+        /*
+
+        //--------------------------------Instruções------------------------------//
+
+        Crie uma classe generica que represente um herói de uma aventura e que possua as seguintes propriedades:
+
+        - nome
+        - idade
+        - tipo (ex: guerreiro, mago, monge, ninja)
+
+        Além disso, deve ter um método chamado atacar que deve atender os seguientes requisitos:
+
+        - exibir a mensagem: "o {tipo} atacou usando {ataque}")
+        - aonde o {tipo} deve ser concatenando o tipo que está na propriedade da classe
+        - e no {ataque} deve seguir uma descrição diferente conforme o tipo, seguindo a tabela abaixo:
+
+        se mago -> no ataque exibir (usou magia)
+        se guerreiro -> no ataque exibir (usou espada)
+        se monge -> no ataque exibir (usou artes marciais)
+        se ninja -> no ataque exibir (usou shuriken)
+
+        Ao final deve se exibir uma mensagem:
+
+        "O {tipo} atacou usando {ataque}"
+        ex: mago atacou usando magia 
+            guerreiro atacou usando espada
+        */
+
+        //-----------------------Código do Programa--------------------------------//
+
+        //Criação da classe jogador.
+        class jogador{
+            //Construtor da classe jogador.
+            constructor(nome, idade, tipo){
+                this.nome = nome
+                this.idade = idade
+                this.tipo = tipo        
+            
+            }
+
+            //Imprime que o jogador de determinado tipo realizou um ataque de acordo com sua especialidade.
+            atacar(){
+                console.log(`O ${this.tipo} atacou usando ${this.ataque}.`)
+
+            }
+        }
+
+            //Função que retorna o tipo de ataque.
+            /*function ataqueTotal(tipo){
+
+            console.log("Escolha o seu jogador: ")
+            console.log("1 - Alexander, o Mago de Gelo")
+            console.log("2 - Juan, o Mago de Fogo")
+            console.log("3 - Christian, o Mago Elétrico")
+            console.log("4 - John, o Cavaleiro Negro")
+            console.log("5 - Tina, a Valquiria")
+            console.log("6 - Walter, o Príncipe Dourado")
+            console.log("7 - Jonnathan, o Monge Rambo")
+            console.log("8 - Helian, o Monge Van Dame")
+            console.log("9 - Clark, o Monge Jet Lee")
+            console.log("10 - Anderson, o Ninja Jiraia")
+            console.log("11 - Kaio, o Ninja Naruto")
+            console.log("12 - Kléber, o Ninja Boruto")
+
+            //Solicita a escolha de um jogador.
+            let player = parseInt(prompt("Escolha um jogador digitando um número no intervalo: [1, 12]"))
+
+            //Implementação do laço para validação da escolha.
+            while(player < 1 && player > 12){
+                console.log("Esta escolha não é válida!")
+                console.log("Escolha um valor entre 1 e 12.")
+                console.log("Escolha o seu jogador: ")
+                console.log("1 - Alexander, o Mago de Gelo")
+                console.log("2 - Juan, o Mago de Fogo")
+                console.log("3 - Christian, o Mago Elétrico")
+                console.log("4 - John, o Cavaleiro Negro")
+                console.log("5 - Tina, a Valquiria")
+                console.log("6 - Walter, o Príncipe Dourado")
+                console.log("7 - Jonnathan, o Monge Rambo")
+                console.log("8 - Helian, o Monge Van Dame")
+                console.log("9 - Clark, o Monge Jet Lee")
+                console.log("10 - Anderson, o Ninja Jiraia")
+                console.log("11 - Kaio, o Ninja Naruto")
+                console.log("12 - Kléber, o Ninja Boruto")        
+
+                player = parseInt(prompt("Escolha um jogador digitando um número no intervalo: [1, 12]"))
+            }
+
+            //Declaração da variável.
+            let tipoDeAtaque = " "
+            
+            //Implementação da estrutura condicional para verificar o tipo de jogador.
+            if(player > 0 && player < 4){
+                this.tipo == "mago"
+                tipoDeAtaque = "magia"        
+            }
+            if(player > 3 && player < 7){
+                this.tipo == "guerreiro"
+                tipoDeAtaque = "espada"
+            }
+            if(player > 6 && player < 10){
+                this.tipo == "monge"
+                tipoDeAtaque = "artes marciais"
+            }
+            if(player > 10 && player < 13){
+                this.tipo == "ninja"
+                tipoDeAtaque = "shuriken"
+            }
+
+            console.log("Uso da estrutura condicional e de repetição para impressão.")
+            console.log(`O ${this.tipo} atacou usando ${tipoDeAtaque}.`) 
+        }*/
+
+        //Instanciação dos objetos.
+
+        //jogador tipo: mago
+        let magoDeGelo = new jogador("Alexander", 20, "mago")
+        let magoDeFogo = new jogador("Juan", 27, "mago")
+        let magoEletrico = new jogador("Christian", 23, "mago")
+
+        //jogador tipo: guerreiro
+        let cavaleiroNegro = new jogador("John", 29, "guerreiro")
+        let valquiria = new jogador("Tina", 32, "guerreiro")
+        let principeDourado = new jogador("Walter", 35, "guerreiro")
+
+        //jogador tipo: monge
+        let rambo = new jogador("Jonnathan", 42, "monge")
+        let vanDame = new jogador("Helian", 70, "monge")
+        let jetLee = new jogador("Clark", 55, "monge")
+
+        //jogador tipo: ninja
+        let jiraia = new jogador("Anderson", 42, "ninja")
+        let naruto = new jogador("Kaio", 35, "ninja")
+        let boruto = new jogador("Kleber", 15, "ninja")
+
+        //Usando a função para impressão.
+        console.log("Uso da função atacar() para impressão: ")
+
+        naruto.atacar()
+        valquiria.atacar()
+        magoDeFogo.atacar()
+        jetLee.atacar()
+        
+
+        
+    </script>       
+</body>
+</html>
