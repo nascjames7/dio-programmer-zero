@@ -25,6 +25,13 @@ Ao final deve se exibir uma mensagem:
 
 //-----------------------Código do Programa--------------------------------//
 
+//Função que calcula o saldo.
+function saldo(numeroDeVitorias, numeroDeDerrotas){
+
+    let saldoDePartidasRankeadas = (numeroDeVitorias - numeroDeDerrotas)
+    return saldoDePartidasRankeadas
+}
+
 //Declaração da variáveis e solicitação da quantidade de experiência do héroi..
 let numeroDeVitorias = parseInt(prompt("Digite a quantidade de vitórias do nosso herói: "))
 
@@ -39,35 +46,37 @@ while(numeroDeDerrotas <= 0){
     alert('Esse dado de entrada não é válido. Digite um valor maior que zero!')
     numeroDeDerrotas = parseInt(prompt("Digite a quantidade de derrotas do nosso héroi: "))
 }
-let saldoDePartidasRankeadas = (numeroDeVitorias - numeroDeDerrotas)
+
+//Chamada da função.
+resultado = saldo(numeroDeVitorias, numeroDeDerrotas)
 
 //Implementação da estrututa condicional.
-if(saldoDePartidasRankeadas <= 10){
+if(resultado <= 10){
     //Impressão da resposta para este caso específico.
-    alert("O Herói tem saldo de " + saldoDePartidasRankeadas + " está no nível de Ferro.")
+    alert("O Herói tem saldo de " + resultado + " está no nível de Ferro.")
 }
-if(saldDePartidasRankeadas > 10 && saldoDePartidasRankeadas <= 20){
+if(resultado > 10 && resultado <= 20){
     //Impressão da resposta para este caso específico.
-    alert("O Herói tem saldo de " + saldoDePartidasRankeadas + " e está no nível de Bronze.")
+    alert("O Herói tem saldo de " + resultado + " e está no nível de Bronze.")
 }
-if(saldoDePartidasRankeadas > 20 && saldoDePartidasRankeadas <= 50){
+if(resultado > 20 && resultado <= 50){
     //Impressão da resposta para este caso específico.
-    alert("O Herói tem saldo de " + saldoDePartidasRankeadas + " e está no nível de Prata.")
+    alert("O Herói tem saldo de " + resultado + " e está no nível de Prata.")
 }
-if(saldoDePartidasRankeadas > 50 && saldoDePartidasRankeadas <= 80){
+if(resultado > 50 && resultado <= 80){
     //Impressão da resposta para este caso específico.
-    alert("O Herói tem saldo de " + saldoDePartidasRankeadas + " e está no nível de Ouro.")
+    alert("O Herói tem saldo de " + resultado + " e está no nível de Ouro.")
 }
-if(saldoDePartidasRankeadas > 80 && saldoDePartidasRankeadas <= 90){
+if(resultado > 80 && resultado <= 90){
     //Impressão da resposta para este caso específico.
-    alert("O Herói tem saldo de " + saldoDePartidasRankeadas + " e está no nível de Diamante.")
+    alert("O Herói tem saldo de " + resultado + " e está no nível de Diamante.")
 }
-if(saldoDePartidasRankeadas > 90 && saldoDePartidasRankeadas <= 100){
+if(resultado > 90 && resultado <= 100){
     //Impressão da resposta para este caso específico.
-    alert("O Herói tem saldo de " + saldoDePartidasRankeadas + " e está no nível de Lendário.")
+    alert("O Herói tem saldo de " + resultado + " e está no nível de Lendário.")
 }            
-if(saldoDePartidasRankeadas > 100){
+if(resultado > 100){
     //Impressão da resposta para este caso específico.
-    alert("O Herói tem saldo de " + saldoDePartidasRankeadas + " e está no nível de Imortal.")
+    alert("O Herói tem saldo de " + resultado + " e está no nível de Imortal.")
 }
 
